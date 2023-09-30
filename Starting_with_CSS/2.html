@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Paragraphs</title>
+    <style>
+        /* BEM Naming Convention */
+        .paragraph { Block
+            font-size: 16px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .paragraph__title { /* Element within Block */
+            font-weight: bold;
+            color: #333;
+        }
+
+        .paragraph--important { /* Modifier of Block */
+            background-color: yellow;
+        }
+
+        .paragraph--warning { /* Modifier of Block */
+            background-color: red;
+            color: white;
+        }
+
+        .paragraph--info { /* Modifier of Block */
+            background-color: lightblue;
+        }
+
+        .paragraph--quote { /* Modifier of Block */
+            border-left: 5px solid #333;
+            padding-left: 10px;
+        }
+
+        .paragraph--highlight { /* Modifier of Block */
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p class="paragraph paragraph__title">Introduction</p>
+    <p class="paragraph paragraph--important">This is an important paragraph.</p>
+    <p class="paragraph paragraph--warning">Warning! Pay attention to this.</p>
+    <p class="paragraph paragraph--info">Additional information goes here.</p>
+    <p class="paragraph paragraph--quote">"This is a quote from someone famous."</p>
+    <p class="paragraph paragraph--highlight">This paragraph is highlighted.</p>
+</body>
+</html>

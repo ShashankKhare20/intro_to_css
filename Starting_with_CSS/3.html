@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #submit {
+            color: brown;
+            background-color: aqua;
+            opacity: 0.2;                 /*opacity applied at submit button*/
+        }
+        .name {
+            background-color: rgb(165, 170, 182);       /*custom colour pallet*/
+        }
+        .age {
+            color: rgb(177, 122, 50);
+        }
+    </style>
+</head>
+<body>
+    <H1>Form</H1>
+    <form action="#">
+        <label for="name" id="name">Name</label>
+        <input type="text" id="name" class="name"><br><br>
+        <label for="age" id="age">Age</label>
+        <input type="number" id="age" min="0" class="age"><br><br>
+        <label for="hobby">Do you like colours</label>
+        <input type="checkbox" id="hobby" class="hobby">
+        <br><br>
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>
